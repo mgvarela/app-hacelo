@@ -23,7 +23,7 @@ export const SuccessReceipt: React.FC<SuccessReceiptProps> = ({
         particleCount: 70,
         spread: 60,
         origin: { y: 0.6 },
-        colors: ['#4F46E5', '#10B981', '#F59E0B'],
+        colors: ['#4F46E5', '#10B981', '#F97316'],
       });
     } catch {
       // ignore
@@ -110,7 +110,7 @@ HACÉLO se ocupó del trámite por vos.
       <div
         className={`p-5 sm:p-7 rounded-2xl sm:rounded-3xl border-2 space-y-4 ${
           highContrast
-            ? 'bg-neutral-900 border-yellow-400 text-yellow-300'
+            ? 'bg-neutral-900 border-orange-500 text-white'
             : 'bg-slate-900 border-slate-800 text-white'
         }`}
       >
@@ -144,7 +144,7 @@ HACÉLO se ocupó del trámite por vos.
           id="btn-download-receipt-proof"
           className={`min-h-[50px] flex-1 py-4 px-6 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-3 transition-all active:scale-98 shadow-md focus:outline-none focus:ring-3 ${
             highContrast
-              ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+              ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
               : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-200 focus:ring-indigo-500'
           }`}
         >
@@ -158,7 +158,7 @@ HACÉLO se ocupó del trámite por vos.
           id="btn-new-procedure-reset"
           className={`min-h-[50px] py-4 px-6 rounded-xl sm:rounded-2xl font-black text-sm sm:text-base flex items-center justify-center gap-2 border-2 transition-all focus:outline-none focus:ring-2 ${
             highContrast
-              ? 'border-yellow-400 hover:bg-neutral-900 text-yellow-300 focus:ring-yellow-400'
+              ? 'border-orange-500 hover:bg-neutral-900 text-orange-400 focus:ring-orange-400'
               : 'border-slate-300 hover:bg-slate-100 text-slate-800 focus:ring-slate-400'
           }`}
         >

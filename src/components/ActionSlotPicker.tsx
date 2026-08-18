@@ -40,7 +40,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
     <div
       className={`rounded-2xl sm:rounded-3xl p-4 sm:p-7 border-2 space-y-4 sm:space-y-5 animate-in fade-in slide-in-from-bottom-2 duration-200 ${
         highContrast
-          ? 'bg-neutral-900 border-yellow-400 text-white'
+          ? 'bg-neutral-900 border-orange-500 text-white'
           : 'bg-white border-indigo-200 shadow-xl shadow-indigo-100/50'
       }`}
     >
@@ -48,7 +48,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
         <div>
           <span
             className={`text-xs font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md inline-block ${
-              highContrast ? 'bg-yellow-400 text-black' : 'bg-indigo-50 text-indigo-800'
+              highContrast ? 'bg-orange-500 text-white' : 'bg-indigo-50 text-indigo-800'
             }`}
           >
             Elección Sencilla en 1 Toque
@@ -82,10 +82,10 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
               className={`p-3.5 sm:p-5 rounded-xl sm:rounded-2xl border-2 cursor-pointer transition-all focus:outline-none focus:ring-3 ${
                 isSelected
                   ? highContrast
-                    ? 'border-yellow-400 bg-neutral-800 text-yellow-300 ring-2 ring-yellow-400/40 focus:ring-yellow-400'
+                    ? 'border-orange-500 bg-neutral-800 text-white ring-2 ring-orange-500/40 focus:ring-orange-400'
                     : 'border-indigo-600 bg-indigo-50/80 shadow-sm focus:ring-indigo-500'
                   : highContrast
-                  ? 'border-neutral-700 bg-neutral-950 hover:border-neutral-500 focus:ring-yellow-400'
+                  ? 'border-neutral-700 bg-neutral-950 hover:border-neutral-500 focus:ring-orange-400'
                   : 'border-slate-200 hover:border-slate-300 bg-slate-50 focus:ring-indigo-500'
               }`}
             >
@@ -106,7 +106,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
                   {option.location && (
                     <div
                       className={`flex items-center gap-1.5 text-xs font-semibold pt-1 ${
-                        highContrast ? 'text-yellow-400' : 'text-indigo-700'
+                        highContrast ? 'text-orange-400' : 'text-indigo-700'
                       }`}
                     >
                       <MapPin className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
@@ -118,7 +118,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
                   className={`w-7 h-7 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 ${
                     isSelected
                       ? highContrast
-                        ? 'border-yellow-400 bg-yellow-400 text-black'
+                        ? 'border-orange-500 bg-orange-500 text-white'
                         : 'border-indigo-600 bg-indigo-600 text-white'
                       : highContrast
                       ? 'border-neutral-500 bg-neutral-900'
@@ -139,7 +139,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
           onClick={onCancel}
           className={`min-h-[44px] text-sm font-bold px-4 py-3 rounded-xl transition-colors focus:outline-none focus:ring-2 ${
             highContrast
-              ? 'text-neutral-300 hover:text-white focus:ring-yellow-400'
+              ? 'text-neutral-300 hover:text-white focus:ring-orange-400'
               : 'text-slate-600 hover:text-slate-900 focus:ring-slate-400'
           }`}
         >
@@ -151,7 +151,7 @@ export const ActionSlotPicker: React.FC<ActionSlotPickerProps> = ({
           id="btn-confirm-slot-selection"
           className={`min-h-[48px] font-black text-sm sm:text-base py-3.5 px-6 rounded-xl sm:rounded-2xl flex items-center justify-center gap-2 transition-all active:scale-95 shadow-md focus:outline-none focus:ring-3 ${
             highContrast
-              ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+              ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
               : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-200 focus:ring-indigo-500'
           }`}
         >

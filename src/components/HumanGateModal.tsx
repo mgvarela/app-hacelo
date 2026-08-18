@@ -41,7 +41,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
       <div
         className={`w-full max-w-lg rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border-2 relative overflow-hidden animate-in zoom-in-95 duration-200 ${
           highContrast
-            ? 'bg-black border-yellow-400 text-white'
+            ? 'bg-black border-orange-500 text-white'
             : 'bg-white border-slate-200 text-slate-900'
         }`}
       >
@@ -50,7 +50,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
           <div
             className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center font-bold text-2xl shrink-0 ${
               highContrast
-                ? 'bg-yellow-400 text-black'
+                ? 'bg-orange-500 text-white'
                 : 'bg-indigo-50 border border-indigo-100 text-indigo-700'
             }`}
           >
@@ -59,7 +59,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
           <div>
             <span
               className={`text-xs font-black uppercase tracking-widest px-2.5 py-1 rounded-full ${
-                highContrast ? 'bg-yellow-400 text-black' : 'bg-indigo-100 text-indigo-900'
+                highContrast ? 'bg-orange-500 text-white' : 'bg-indigo-100 text-indigo-900'
               }`}
             >
               Paso de Seguridad
@@ -74,7 +74,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
         <div
           className={`p-4 sm:p-5 rounded-xl sm:rounded-2xl border-2 space-y-3 my-4 sm:my-5 ${
             highContrast
-              ? 'bg-neutral-900 border-yellow-400 text-yellow-100'
+              ? 'bg-neutral-900 border-orange-500 text-neutral-100'
               : 'bg-slate-50 border-slate-200 text-slate-700'
           }`}
         >
@@ -86,18 +86,18 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
             <div
               className={`p-3.5 sm:p-4 rounded-xl border text-sm space-y-1 ${
                 highContrast
-                  ? 'bg-black border-yellow-400 text-white'
+                  ? 'bg-black border-orange-500 text-white'
                   : 'bg-white border-indigo-100 text-slate-900 shadow-2xs'
               }`}
             >
               <span
                 className={`text-xs font-black uppercase tracking-wider block ${
-                  highContrast ? 'text-yellow-400' : 'text-slate-500'
+                  highContrast ? 'text-orange-400' : 'text-slate-500'
                 }`}
               >
                 Opción elegida:
               </span>
-              <div className="font-extrabold text-base text-indigo-700 dark:text-yellow-300">
+              <div className="font-extrabold text-base text-indigo-700 dark:text-orange-400">
                 {selectedOptionData.label}
               </div>
               {selectedOptionData.location && (
@@ -110,7 +110,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
 
           <div
             className={`flex items-center gap-2 text-xs font-black pt-1 ${
-              highContrast ? 'text-yellow-300' : 'text-emerald-800'
+              highContrast ? 'text-orange-300' : 'text-emerald-800'
             }`}
           >
             <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-600" aria-hidden="true" />
@@ -126,7 +126,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
             disabled={isExecuting}
             className={`min-h-[48px] px-5 py-3.5 rounded-xl sm:rounded-2xl text-sm font-bold transition-colors disabled:opacity-50 focus:outline-none focus:ring-2 ${
               highContrast
-                ? 'text-neutral-200 hover:text-white focus:ring-yellow-400'
+                ? 'text-neutral-200 hover:text-white focus:ring-orange-400'
                 : 'text-slate-600 hover:text-slate-900 focus:ring-slate-400'
             }`}
           >
@@ -140,7 +140,7 @@ export const HumanGateModal: React.FC<HumanGateModalProps> = ({
             disabled={isExecuting}
             className={`min-h-[48px] flex-1 font-black text-sm sm:text-base py-4 px-6 rounded-xl sm:rounded-2xl shadow-xl transition-all flex items-center justify-center gap-3 disabled:opacity-50 focus:outline-none focus:ring-3 ${
               highContrast
-                ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                 : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-200 focus:ring-emerald-500'
             }`}
           >

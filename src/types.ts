@@ -97,3 +97,26 @@ export interface AutomationExecutionResult {
   summary: string;
   details: Record<string, string>;
 }
+
+export interface UserProfile {
+  name: string;
+  dni: string;
+  cuil: string;
+  email: string;
+  phone: string;
+  address: string;
+  isVerified: boolean;
+}
+
+export interface HistoryItem {
+  id: string;
+  procedureKey: string;
+  procedureTitle: string;
+  jurisdiction: string;
+  date: string;
+  status: 'COMPLETED' | 'IN_PROGRESS' | 'CANCELLED';
+  referenceCode: string;
+  iconType: 'car' | 'lightbulb' | 'shield' | 'other';
+  description: string;
+  hasAppointment?: boolean;
+}

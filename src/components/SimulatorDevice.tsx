@@ -198,7 +198,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
       <div
         className={`w-full rounded-2xl sm:rounded-3xl transition-all duration-200 ${
           highContrast
-            ? 'bg-black text-white border-2 border-yellow-400 shadow-none'
+            ? 'bg-black text-white border-2 border-orange-500 shadow-none'
             : 'bg-white text-slate-900 border border-slate-200/90 shadow-lg sm:shadow-xl shadow-slate-200/50'
         } overflow-hidden p-4 sm:p-7 md:p-10`}
       >
@@ -220,7 +220,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                   </h2>
                   <p
                     className={`${subTextClass} ${
-                      highContrast ? 'text-yellow-200' : 'text-slate-600'
+                      highContrast ? 'text-orange-200' : 'text-slate-600'
                     } font-medium mt-1`}
                   >
                     Podés hablar con el micrófono, escribir abajo o tocar un trámite frecuente.
@@ -236,7 +236,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                     }
                     className={`min-h-[44px] min-w-[44px] p-3 rounded-xl sm:rounded-2xl shrink-0 transition-colors flex items-center justify-center focus:outline-none focus:ring-3 ${
                       highContrast
-                        ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                        ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                         : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100 focus:ring-indigo-500'
                     }`}
                     title="Escuchar instrucción"
@@ -269,7 +269,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                     placeholder="Ej: Renovar registro, pedir subsidio de luz..."
                     className={`w-full py-4 sm:py-5 pl-4 sm:pl-5 pr-28 sm:pr-32 rounded-xl sm:rounded-2xl font-medium outline-none transition-all ${bodyClass} min-h-[52px] ${
                       highContrast
-                        ? 'bg-neutral-900 border-2 border-yellow-400 text-yellow-300 placeholder:text-neutral-400 focus:ring-3 focus:ring-yellow-400'
+                        ? 'bg-neutral-900 border-2 border-orange-500 text-white placeholder:text-neutral-400 focus:ring-3 focus:ring-orange-400'
                         : 'bg-slate-50 border-2 border-slate-300 focus:border-indigo-600 focus:bg-white text-slate-900 placeholder:text-slate-500 shadow-xs focus:ring-3 focus:ring-indigo-100'
                     }`}
                   />
@@ -287,7 +287,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         isListening
                           ? 'bg-red-600 text-white animate-pulse shadow-lg focus:ring-red-400'
                           : highContrast
-                          ? 'bg-yellow-400 text-black hover:bg-yellow-300 font-bold focus:ring-yellow-400'
+                          ? 'bg-orange-500 text-white hover:bg-orange-600 font-bold focus:ring-orange-400'
                           : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-200 focus:ring-indigo-500'
                       }`}
                     >
@@ -306,7 +306,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                       aria-label="Buscar trámite"
                       className={`min-h-[44px] min-w-[44px] w-11 h-11 rounded-lg sm:rounded-xl flex items-center justify-center transition-all disabled:opacity-40 focus:outline-none focus:ring-3 ${
                         highContrast
-                          ? 'bg-neutral-800 text-yellow-400 border border-yellow-400 hover:bg-neutral-700 focus:ring-yellow-400'
+                          ? 'bg-neutral-800 text-orange-400 border border-orange-500 hover:bg-neutral-700 focus:ring-orange-400'
                           : 'bg-slate-900 hover:bg-slate-800 text-white focus:ring-slate-900'
                       }`}
                     >
@@ -322,7 +322,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                     aria-live="polite"
                     className={`p-3.5 sm:p-4 rounded-xl sm:rounded-2xl flex items-center gap-3 animate-pulse border ${
                       highContrast
-                        ? 'bg-neutral-900 border-yellow-400 text-yellow-300'
+                        ? 'bg-neutral-900 border-orange-500 text-orange-200'
                         : 'bg-red-50 border-red-200 text-red-800'
                     }`}
                   >
@@ -341,7 +341,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
               <div className="pt-2">
                 <span
                   className={`block text-xs font-extrabold uppercase tracking-wider mb-2.5 ${
-                    highContrast ? 'text-yellow-400' : 'text-slate-600'
+                    highContrast ? 'text-orange-400' : 'text-slate-600'
                   }`}
                 >
                   Trámites frecuentes:
@@ -359,14 +359,14 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         }}
                         className={`min-h-[56px] p-3.5 sm:p-4 rounded-xl sm:rounded-2xl text-left font-bold transition-all border flex items-center gap-3 focus:outline-none focus:ring-3 active:scale-98 ${
                           highContrast
-                            ? 'bg-neutral-900 hover:bg-neutral-800 border-yellow-400 text-yellow-300 focus:ring-yellow-400'
+                            ? 'bg-neutral-900 hover:bg-neutral-800 border-orange-500 text-white focus:ring-orange-400'
                             : 'bg-slate-50 hover:bg-indigo-50 hover:border-indigo-300 border-slate-200 text-slate-800 hover:text-indigo-950 shadow-2xs focus:ring-indigo-500'
                         }`}
                       >
                         <div
                           className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
                             highContrast
-                              ? 'bg-black text-yellow-400 border border-yellow-400'
+                              ? 'bg-black text-orange-400 border border-orange-500'
                               : 'bg-white text-indigo-700 shadow-2xs border border-slate-200/80'
                           }`}
                         >
@@ -397,7 +397,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                 role="status"
                 aria-live="polite"
                 className={`p-8 sm:p-10 rounded-2xl sm:rounded-3xl text-center space-y-3 sm:space-y-4 border ${
-                  highContrast ? 'bg-neutral-900 border-yellow-400' : 'bg-slate-50 border-slate-200'
+                  highContrast ? 'bg-neutral-900 border-orange-500' : 'bg-slate-50 border-slate-200'
                 }`}
               >
                 <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
@@ -412,7 +412,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                 <div
                   className={`p-5 sm:p-7 rounded-2xl sm:rounded-3xl border transition-all ${
                     highContrast
-                      ? 'bg-neutral-900 border-yellow-400 text-white'
+                      ? 'bg-neutral-900 border-orange-500 text-white'
                       : 'bg-indigo-50/50 border-indigo-100 text-slate-900'
                   }`}
                 >
@@ -422,7 +422,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         <span
                           className={`text-xs font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md inline-flex items-center gap-1.5 ${
                             highContrast
-                              ? 'bg-yellow-400 text-black'
+                              ? 'bg-orange-500 text-white font-black'
                               : 'bg-indigo-100 text-indigo-800'
                           }`}
                         >
@@ -435,7 +435,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                       </h3>
                       <p
                         className={`${bodyClass} ${
-                          highContrast ? 'text-yellow-100' : 'text-slate-700'
+                          highContrast ? 'text-orange-100' : 'text-slate-700'
                         } font-medium mt-1`}
                       >
                         {userExplanation || activeProcedure.summary}
@@ -450,7 +450,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         }
                         className={`min-h-[44px] min-w-[44px] p-3 rounded-xl sm:rounded-2xl shrink-0 flex items-center justify-center focus:outline-none focus:ring-3 ${
                           highContrast
-                            ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                            ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                             : 'bg-white text-indigo-700 shadow-sm hover:bg-slate-50 focus:ring-indigo-500'
                         }`}
                         title="Leer resumen del trámite"
@@ -466,7 +466,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                 <div className="space-y-3">
                   <h4
                     className={`text-xs sm:text-sm font-extrabold uppercase tracking-wider ${
-                      highContrast ? 'text-yellow-400' : 'text-slate-600'
+                      highContrast ? 'text-orange-400' : 'text-slate-600'
                     }`}
                   >
                     Paso a paso de tu trámite:
@@ -487,7 +487,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                                 : 'bg-emerald-50/70 border-emerald-300 text-slate-900'
                               : isPending
                               ? highContrast
-                                ? 'bg-neutral-900 border-yellow-400 text-yellow-300 ring-2 ring-yellow-400/20'
+                                ? 'bg-neutral-900 border-orange-500 text-white ring-2 ring-orange-500/20'
                                 : 'bg-white border-indigo-600 shadow-md shadow-indigo-100 text-slate-900'
                               : 'bg-slate-50 border-slate-200 text-slate-500 opacity-70'
                           }`}
@@ -498,7 +498,9 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                                 isValidated
                                   ? 'bg-emerald-600 text-white'
                                   : isPending
-                                  ? 'bg-indigo-600 text-white'
+                                  ? highContrast
+                                    ? 'bg-orange-500 text-white'
+                                    : 'bg-indigo-600 text-white'
                                   : 'bg-slate-200 text-slate-600'
                               }`}
                             >
@@ -512,7 +514,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                               <div className={`${bodyClass} font-bold leading-tight`}>{req.name}</div>
                               <div
                                 className={`${subTextClass} ${
-                                  highContrast ? 'text-yellow-200' : 'text-slate-600'
+                                  highContrast ? 'text-neutral-300' : 'text-slate-600'
                                 } mt-0.5`}
                               >
                                 {req.description}
@@ -534,7 +536,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                                 onClick={() => setIsActionSlotOpen(true)}
                                 className={`min-h-[44px] px-4 sm:px-5 py-2.5 rounded-xl font-black text-xs sm:text-sm flex items-center gap-2 shadow-sm transition-all active:scale-95 focus:outline-none focus:ring-3 ${
                                   highContrast
-                                    ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                                    ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                                     : 'bg-indigo-600 hover:bg-indigo-700 text-white focus:ring-indigo-500 shadow-indigo-100'
                                 }`}
                               >
@@ -573,7 +575,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         onClick={() => setIsActionSlotOpen(true)}
                         className={`w-full min-h-[56px] py-4 sm:py-5 px-6 rounded-xl sm:rounded-2xl font-black ${titleClass} flex items-center justify-center gap-3 transition-all active:scale-98 shadow-xl focus:outline-none focus:ring-3 ${
                           highContrast
-                            ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                            ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                             : 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-indigo-200 focus:ring-indigo-500'
                         }`}
                       >
@@ -586,7 +588,7 @@ export const SimulatorDevice: React.FC<SimulatorDeviceProps> = ({
                         onClick={() => setIsHumanGateOpen(true)}
                         className={`w-full min-h-[56px] py-4 sm:py-5 px-6 rounded-xl sm:rounded-2xl font-black ${titleClass} flex items-center justify-center gap-3 transition-all active:scale-98 shadow-xl focus:outline-none focus:ring-3 ${
                           highContrast
-                            ? 'bg-yellow-400 text-black hover:bg-yellow-300 focus:ring-yellow-400'
+                            ? 'bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-400'
                             : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-emerald-200 focus:ring-emerald-500'
                         }`}
                       >
