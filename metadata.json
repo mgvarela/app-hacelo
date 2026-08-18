@@ -1,0 +1,6 @@
+{
+  "name": "HACÉLO - Agente de Acción y Trámites",
+  "description": "Agente de IA que transforma intenciones en lenguaje natural en procesos digitales guiados y automatizados para CoderCup AI T1.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
